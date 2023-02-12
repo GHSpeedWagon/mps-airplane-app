@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  mongodb:
+    container_name: mpsappmongodb
+    image: mongo:latest
+    restart: always
+    ports:
+      - "27017:27017"
+
+  app:
+    depends_on:
+      - mongodb
+    image: mps-app:1.0
+    build: .
+    ports:
+      - "8080:8080"
