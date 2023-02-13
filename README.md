@@ -13,4 +13,5 @@ ___
 
 ### 💻🛠Local set up tutorial💻🛠
 1. Fork and open this project
-2. Run docker-compose up in terminal;
+2. Download docker
+3. Run docker-compose up in terminal;
